@@ -25,7 +25,7 @@ def main_block(in_file, sep, starting_index):
         j =+ 1
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description = "This module takes as an input a text file (likely a csv) and will display all of the headers in the frst row of the file enumerated. This script was created when I found it annoying to have to manually count the headers names in my csv files to determine the index that I should use when wanting to isolate a particular column for a simple awk command. This module uses the comma character as its default separator, however other separators can be used with the -s/--sep flag. The --index flag can be used to change the first index (probably 0 or 1 because of either using zero- or one-based indexing; the default is set to zero to be in concordance with awk indexing).")
     parser.add_argument(
         "-v", "--verbose",
         action = "store_true",
