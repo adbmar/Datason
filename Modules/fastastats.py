@@ -67,7 +67,7 @@ def main():
     # Main block
 
     #Argument parsing
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description = "This module takes as an input a fasta file (or a piped fasta file) and will display various statistics about the sequences contained in that file. Specifically, it will display the average, maximum, minimum, and median sequence length as well as displaying the GC content of the entire file. The module will also save a png image of a histogram of fasta lengths at the path given to it.")
     parser.add_argument(
         "-o", "--out",
         help = "Path to file where histogram of fasta lengths will be saved",
