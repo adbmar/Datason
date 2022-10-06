@@ -45,7 +45,7 @@ def main():
     #####################
     # Parsing arguments #
     #####################
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description = "This module is an extension of the intohisto module, except that it can take a two dimensional list where the x and y variables are separated by some character and each pair of x and y variables are separated by newlines. Similar to the above module, it can take an input from a file or from a pipe. The module will then save a png image of a two dimensional histogram from the values in the input.")
     parser.add_argument(
         "-v", "--verbose",
         action = "store_true",
