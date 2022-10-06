@@ -47,7 +47,7 @@ def main():
     #####################
     # Parsing arguments #
     #####################
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description = "This module was originally conceived as a tool to pipe into an awk command from a csv file. Thus it takes as its input a list of integers separated by the newlines (whether from an input file or from a pipe). The module will then save a png image of a histogram of the integers in this list.")
     parser.add_argument(
         "-v", "--verbose",
         action = "store_true",
