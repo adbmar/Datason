@@ -24,7 +24,7 @@ def main():
         "enum_headers" : directory+"/Modules/"+"enum_headers.py"}
 
     # Parsing top level arguments
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(add_help = False)
     parser.add_argument(
         "command",
         type = str,
