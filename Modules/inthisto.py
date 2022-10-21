@@ -33,10 +33,13 @@ def main():
         # Function for proportion printing 
         # which involves printing the proportion of data represented
         # by each integer in the range of data values
+        print("")
         total = len(data)
         proportion = {}
-        count = 0
         for i in range(min_datum,max_datum,1):
+            percent = round((i-min_datum)/len(range(min_datum,max_datum,1)),2)*100
+            print(f"\r{percent}% complete"
+            count = 0
             for datum in data:
                 if datum == i:
                     count += 1
