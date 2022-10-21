@@ -38,7 +38,7 @@ def main():
         proportion = {}
         for i in range(min_datum,max_datum,1):
             percent = round((i-min_datum)/len(range(min_datum,max_datum,1)),2)*100
-            print(f"\r{percent}% complete"
+            print(f"\r{percent}% complete")
             count = 0
             for datum in data:
                 if datum == i:
