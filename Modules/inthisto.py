@@ -76,7 +76,7 @@ def main():
         dest = "title")
     parser.add_argument(
         "-p", "--proportion",
-        help = "Turns proportion printing on"
+        help = "Turns proportion printing on",
         action = "store_true",
         dest = "prop",
         required = False)
