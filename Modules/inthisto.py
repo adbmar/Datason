@@ -35,8 +35,8 @@ def main():
         # by each integer in the range of data values
         total = len(data)
         proportion = {}
+        count = 0
         for i in range(min_datum,max_datum,1):
-            count = 0
             for datum in data:
                 if datum == i:
                     count += 1
@@ -74,6 +74,12 @@ def main():
         help = "Title to put on graph; note that this must be one string with no spaces",
         type = str,
         dest = "title")
+    parser.add_argument(
+        "-p", "--proportion",
+        help = "Turns proportion printing on"
+        action = "store_true",
+        dest = "prop",
+        required = False)
     args = parser.parse_args()
     if args.verbose == True: print(f"The following arguments were received: {args}") # for troubleshooting
 
@@ -121,7 +127,7 @@ def main():
     bins = range(min_datum,max_datum,1)
 
     # Proprtion printing
-    if args.verbose == True:
+    if args.prop == True:
         proportion_printing(data, min_datum, max_datum)
 
     # Plotting
