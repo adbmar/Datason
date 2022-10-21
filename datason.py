@@ -30,7 +30,7 @@ def main():
         type = str,
         choices = module_dict.keys())
     parser.add_argument(
-        "-v", "--verbose",
+        "-m", "--main_verbose",
         action = "store_true",
         default = False,
         dest = "verbose_main")
